@@ -1,11 +1,11 @@
 # monorepo-skeleton
 
-Experimenting a monorepo structure utilize [yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/). The monorepo should support
+Experimenting a monorepo structure utilizes [yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/). The monorepo should support:
 - propriatary private application development 
-- public library development which is depended by the private applications 
+- public library continuous development which can be depended by the private applications 
 - shared configs across all packages & apps 
-- only one instance of dev dependencies installed 
-- all dependencies are deduped - [handled by yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/#toc-how-to-use-it)
+- only one instance of dev dependencies installed
+- all dependencies are deduped when possible- [handled by yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/#toc-how-to-use-it)
 
 ### Structure
 
