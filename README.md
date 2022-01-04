@@ -26,3 +26,6 @@ Experimenting a monorepo structure utilizes [yarn workspaces](https://classic.ya
 ## TODOs:
 - [ ] ensure application builds and deploys. Possibly just send straight to nextjs
   - [ ] experimenting `turborepo`
+
+## Shared Config across all dependencies
+- sharing the config through a shared config package is more ergonomic than having a mono root config which each module has to refer to the parent directory to get access to. 
