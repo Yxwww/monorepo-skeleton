@@ -29,3 +29,6 @@ Experimenting a monorepo structure utilizes [yarn workspaces](https://classic.ya
 
 ## Shared Config across all dependencies
 - sharing the config through a shared config package is more ergonomic than having a mono root config which each module has to refer to the parent directory to get access to. 
+
+## Dependency Management
+- Checkout lerna commands: https://github.com/lerna/lerna/tree/main/commands/add
