@@ -5,6 +5,8 @@
   "main": "firebaseFunctions.js",
   "scripts": {
     "dev": "next src/",
+    "pre-deploy": "node pre-deploy.js",
+    "post-deploy": "node post-deploy.js",
     "build": "next build src/",
     "start": "next start src/",
     "serve": "yarn build && firebase emulators:start --only functions,hosting",
@@ -17,7 +19,7 @@
     "firebase-functions": "^3.13.1",
     "next": "latest",
     "react": "^17.0.2",
-    "@wyxmono/private-utils": "0.0.0",
+    "@wyxmono/private-utils": "file:../../packages/private-utils",
     "wyx-utils": "0.2.6-0",
     "react-dom": "^17.0.2"
   },

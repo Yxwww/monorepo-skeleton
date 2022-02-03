@@ -1,7 +1,11 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
@@ -12,8 +16,12 @@
   "functions": {
     "source": ".",
     "predeploy": [
+      "npm --prefix \"$PROJECT_DIR\" run pre-deploy",
       "npm --prefix \"$PROJECT_DIR\" install",
       "npm --prefix \"$PROJECT_DIR\" run build"
+    ],
+    "postdeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run post-deploy"
     ],
     "runtime": "nodejs14"
   }
