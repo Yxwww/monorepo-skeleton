@@ -1,8 +1,8 @@
 # monorepo-skeleton
 
-Experimenting a monorepo structure utilize (yarn workspaces)[https://classic.yarnpkg.com/lang/en/docs/workspaces/]. The monorepo should support
+Experimenting a monorepo structure utilizes [yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/). The monorepo should support:
 - propriatary private application development 
-- public library development which is depended by the private applications 
+- public library continuous development which can be depended by the private applications 
 - shared configs across all packages & apps 
 - only one instance of dev dependencies installed 
 - all dependencies are deduped - (handled by yarn workspaces)[https://classic.yarnpkg.com/en/docs/workspaces/#toc-how-to-use-it]
@@ -21,9 +21,15 @@ Experimenting a monorepo structure utilize (yarn workspaces)[https://classic.yar
 
 ## Setup
 
-- Clone (wyx-utils)[https://github.com/yxwww/wyx-utils] into `./packages`
+- Clone [wyx-utils](https://github.com/yxwww/wyx-utils) into `./packages`
 - `yarn install` on root
 
 ## TODOs:
 - [ ] ensure application builds and deploys. Possibly just send straight to nextjs
   - [ ] experimenting `turborepo`
+
+## Shared Config across all dependencies
+- sharing the config through a shared config package is more ergonomic than having a mono root config which each module has to refer to the parent directory to get access to. 
+
+## Dependency Management
+- Checkout lerna commands: https://github.com/lerna/lerna/tree/main/commands/add
