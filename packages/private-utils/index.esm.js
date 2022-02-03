@@ -1,3 +1,3 @@
 export function getHello() {
-  return 'hello from private util';
+  return 'this message comes from private util';
 }
