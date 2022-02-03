@@ -6,6 +6,7 @@ Experimenting a monorepo structure utilize (yarn workspaces)[https://classic.yar
 - shared configs across all packages & apps 
 - only one instance of dev dependencies installed 
 - all dependencies are deduped - (handled by yarn workspaces)[https://classic.yarnpkg.com/en/docs/workspaces/#toc-how-to-use-it]
+- shared uniform devdeps and configs
 
 ### Structure
 
